@@ -100,7 +100,7 @@ nav ul li{
 	 font-weight: bold;
 	 color: white; 
 	text-align: center;
-	transform: translateX(1000px);
+	transform: translateY(-1000px);
 	animation: slidein 1s forwards;
 }
 
@@ -130,30 +130,6 @@ nav ul li a:last-child{
 	margin-right: 20px;
 }
 
-nav ul li a::before,
-nav ul li a::after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background-color: white;
-	left: 0;
-	transform: scaleX(0);
-	transition: all .5s;
-}
-
-nav ul li a::before{
-	top: 0;
-	transform-origin: left;
-}
-nav ul li a::after{
-	bottom: 0;
-	transform-origin: right;
-}
-nav ul li a:hover::before,
-nav ul li a:hover::after{
-	transform: scaleX(1);
-}
 
 
 .content{
@@ -379,7 +355,7 @@ nav ul li a:hover::after{
 	
 	from{}
 	to{
-		transform: translateX(0);
+		transform: translateY(0);
 	}
 
 }
